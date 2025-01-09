@@ -11,7 +11,6 @@ export const  Navbar = () => {
     const openMenu = () => {
         sideMenuRef.current.style.transform = 'translateX(-16rem)'
     }
-
     const closeMenu = () => {
         sideMenuRef.current.style.transform = 'translateX(16rem)'
     }
@@ -37,7 +36,7 @@ export const  Navbar = () => {
                 <Image src={assets.logo} alt='' className="w-28 cursor-pointer mr-14"/>
             </a>
             
-            <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-purple-400 shadow-sm bg-opacity-50"} ` }>
+            <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-purple-400 shadow-sm bg-opacity-50"}`}>
                 <li><a className="font-Ovo" href="#top">Home</a></li>
                 <li><a className="font-Ovo" href="#about">About Me</a></li>
                 <li><a className="font-Ovo" href="#services">Services</a></li>
@@ -46,7 +45,6 @@ export const  Navbar = () => {
             </ul>
 
             <div className="flex items-center gap-4">
-
                 <button>
                     <Image src={assets.moon_icon} alt="" className="w-6"/>
                 </button>
@@ -59,14 +57,14 @@ export const  Navbar = () => {
                  </button>
             </div>
 
-            
+
 
             {/**     mobile menu      */}
 
             <ul ref={sideMenuRef} className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-purple-400 transition duration-500">
              
                 <div className="absolute right-6 top-6" onClick={closeMenu}>
-                   <Image src={assets.close_black} alt="" className="w-5"/>
+                   <Image src={assets.close_black} alt="" className="w-5 cursor-pointer" />
                 </div>
 
                 <li><a className="font-Ovo" onClick={closeMenu} href="#top">Home</a></li>
