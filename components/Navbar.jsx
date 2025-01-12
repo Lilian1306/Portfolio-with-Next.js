@@ -3,7 +3,7 @@ import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
 
 
-export const  Navbar = () => {
+export default function Navbar () {
 
     const [isScroll, setIsScroll] = useState(false)
     const sideMenuRef = useRef();
