@@ -13,9 +13,9 @@ export default function Header() {
        <p className="mx-w-2xl mx-auto font-Ovo">I am a frontend developer from Korea, Busan with 10 years of experience in multiple companies like Microsoft, Testa and Apple. </p>
 
        <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-         <a href="#contact" className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2">Contact Me <Image src={assets.right_arrow_white} alt="" className="w-4"/></a>
+         <a href="#contact" className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent">Contact Me <Image src={assets.right_arrow_white} alt="" className="w-4"/></a>
 
-         <a href="/sample-resume-pdf" download className="px-10 py-3 rounded-full border gray-500 flex items-center gap-2">CV <Image src={assets.download_icon} alt="" className="w-4"/></a>
+         <a href="/sample-resume-pdf" download className="px-10 py-3 rounded-full border gray-500 flex items-center gap-2 dark:text-black bg-white">CV <Image src={assets.download_icon} alt="" className="w-4"/></a>
        </div>
     </div>
 
